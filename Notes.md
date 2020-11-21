@@ -17,7 +17,7 @@
 - [ ] If playing a one-player game, the player is always selected (1 point) NOT SURE
 - [ ] When declaring a SET, a selected card can be unselected (1 point) DONE
 - [ ] The timer of 10 seconds (during a player declaring a SET) works (1 point) DONE
-- [ ] Declaring a correct SET gives the player a point (0.5 points) DONE
+- [ ] Declaring a correct SET gives the player a point (0.5 points) DONE!
 - [ ] Declaring an incorrect SET subtracts a point from the player (0.5 points) DONE
 - [ ] The selection of players is working properly (e.g. after declaring, the selection gets reset, a player declaring an incorrect SET is disabled unil next turn) (1 point) NOT SURE
 - [ ] The Is there a SET? button displays according to the settings and works properly (1 point) DONE
