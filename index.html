@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="style.css" />
+<head>
+  <h1>SET</h1>
+</head>
+
+<br />
+<body>
+  <div id="starting page">
+    <a
+      title="https://www.setgame.com/sites/default/files/instructions/SET%20INSTRUCTIONS%20-%20ENGLISH.pdf"
+      href="https://www.setgame.com/sites/default/files/instructions/SET%20INSTRUCTIONS%20-%20ENGLISH.pdf"
+      data-href="https://www.setgame.com/sites/default/files/instructions/SET%20INSTRUCTIONS%20-%20ENGLISH.pdf"
+      class="external"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      <span>Click Here for Game rules</span>
+      <span
+        aria-hidden="true"
+        class="ui-icon ui-icon-extlink ui-icon-inline"
+      ></span>
+    </a>
+    <br />
+    <label for="Difficulties">Choose Difficulty</label>
+    <select name="Difficulties" id="Difficulties">
+      <option value="Advanced" selected="selected">Advanced</option>
+      <option value="Starter">Starter</option>
+    </select>
+    <br />
+
+    <label for="NumberOfPlayers">Select Number of players</label>
+    <select id="nofplayersselection">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+    <br />
+    <div id="noplayersdiv"></div>
+    <label>Player 1 : </label>
+    <input type="text" id="Player" value="Player1" />
+    <br />
+
+    <label for="GameMode">Choose game Mode</label>
+    <select name="Modes" id="Modes">
+      <option value="Practice" selected="selected">Practice</option>
+      <option value="Competitive">Competitive</option>
+    </select>
+    <br />
+    <button id="start_game">Start</button>
+    <div id="noplayersdropdown"></div>
+  </div>
+  <div id="miscellaneous">
+    <button id="show_set">Show Set</button>
+    <button id="is_set_exist">Is Set Exist</button>
+    <button id="deal_3_cards">Deal 3 cards</button>
+  </div>
+  <div id="game page">
+    <div id="message_container"></div>
+    <div id="no_remaining_cards"></div>
+    <div id="winner"></div>
+    <div id="score"></div>
+    <table id="deck" class="deck"></table>
+    <div id="counter"></div>
+    <div id="players_buttons"></div>
+    <div id="players scores"></div>
+    <div id="show_set_div"></div>
+  </div>
+
+  <script src="index.js" type="module"></script>
+</body>
