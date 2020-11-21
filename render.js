@@ -1,4 +1,4 @@
-import {handleBacktoSettingsClick,handleplayerbuttonclick,displaywinner} from './index.js';
+import {handleBacktoSettingsClick,handleplayerbuttonclick,displaywinner, isEndgame} from './index.js';
 import {Deck} from './deck.js';
 
 export function renderDeck(deck)
@@ -23,7 +23,7 @@ export function renderDeck(deck)
 export function render_3_cards(deck){
 
 if(deck.get_length()>=1){
-  var endgame = false;
+  //var endgame = false;
   const empty_tds = document.querySelectorAll('td');
   const cards = deck.deal(3);
 
@@ -39,13 +39,18 @@ if(deck.get_length()>=1){
     }
   }
   let div = document.getElementById('no_remaining_cards');
+  div.style.display = 'block';
   div.innerHTML = 'Number of remaining Cards in the Deck is : '+deck.get_length();
 }
 else{
-  endgame = true;
+  //endgame = true;
   let div = document.getElementById('no_remaining_cards');
+  div.style.display = 'block';
   div.innerHTML ='There is No Remaining Cards in the Deck';
-  displaywinner();
+  console.log('is end game '+ isEndgame());
+   if(isEndgame()){
+     displaywinner();
+   }
 } 
 }
 export function render_3_cards_button(deck){
@@ -182,7 +187,7 @@ export function renderShowSet(x,y,z){
   div.innerHTML = 'There is a SET  Cells '+(x+1)+' , '+(y+1)+' , '+(z+1);
 }
 export function renderIsSet(){
-  let div = document.getElementById('show_set_div');
+  let div = document.getElementById('is_set_div');
   div.style.display ='block'; 
   div.innerHTML = 'Yes ! There is a SET in the current Table';
 }

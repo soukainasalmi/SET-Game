@@ -14,7 +14,7 @@
 - [ ] The options are displayed on the starting page (0.5 points) DONE
 - [ ] The name Of the players can be set, the number of fields matches the number of players, there is a default name for each player (0.5 points) DONE
 - [ ] The player who is declaring a SET can be selected (1 point) DONE
-- [ ] If playing a one-player game, the player is always selected (1 point) NOT SURE
+- [ ] If playing a one-player game, the player is always selected (1 point) DONE
 - [ ] When declaring a SET, a selected card can be unselected (1 point) DONE
 - [ ] The timer of 10 seconds (during a player declaring a SET) works (1 point) DONE
 - [ ] Declaring a correct SET gives the player a point (0.5 points) DONE!

@@ -31,13 +31,14 @@ export function handleplayerbuttonclick(e1){
 
     e1.target.disabled = true;
     var index = e1.target.id;
-    if(players.length==1 && game_mode_selection === 'Practice'){
+    if(players.length === 1 && game_mode_selection.value === 'Practice')
+    {
         players[0].singleplay();
     }
-    else{
+    else
+    {
         players[index].play(index);
     }
- 
 }
 
 
@@ -68,8 +69,10 @@ function displayplayers(){
 }
 
 export function isEndgame(){
-
+    console.log(!IsSetIntable());
+    return !IsSetIntable();
 }
+
 export function displaywinner(){
 
     players.sort((a, b) => (a.score > b.score) ? -1 : 1)
@@ -167,27 +170,16 @@ export function evaluate(id){
 }else{
     render_no_selectedcards();
 }
- table_cards = document.querySelectorAll('#unselected');
+if(players.length > 1){
+    table_cards = document.querySelectorAll('#unselected');
 
-for(let i=0;i<table_cards.length;i++){
-    table_cards[i].removeEventListener('click',handleCardClick);
+    for(let i=0;i<table_cards.length;i++){
+        table_cards[i].removeEventListener('click',handleCardClick);
+    }
+}else if (handleIsSetclick && players.length === 1){
+    players[0].singleplay();
 }
-
 }
-
-
-// export function is_Set(selectedcards){
-
-// if(selectedcards[0].className === selectedcards[1].className && selectedcards[1].className === selectedcards[2].className){
-//     return true;
-// }
-// else if (selectedcards[0].className != selectedcards[1].className && selectedcards[1].className != selectedcards[2].className && selectedcards[0].className != selectedcards[2].className){
-//     return true;
-// }
-// else{
-//     return false;
-// }
-// }
 
 export function is_Set(selectedcards){
 
@@ -225,6 +217,7 @@ function handleStartGame(){
     renderBacktoSettingsButton();
     
 }
+
 export function handleBacktoSettingsClick(){
     location.reload();
     Settingsdiv.style.display = 'block';
@@ -235,7 +228,7 @@ function handleDeal3cardsclick(){
 
     render_3_cards_button(deck);
 }
-function handleIsSetclick(){
+function IsSetIntable(){
 
     var tablecards = document.querySelectorAll('#unselected');
     for(let x=0;x<tablecards.length;x++){
@@ -244,16 +237,23 @@ function handleIsSetclick(){
                 if(x!=y && y!=z && x!=z){
                     if(is_Set([tablecards[x],tablecards[y],tablecards[z]])) 
                     {
-                        renderIsSet();
+                        return true;
                     }
                     }
                 }
             }
         }
+        return false;
+}
+function handleIsSetclick(){
+
+  if(IsSetIntable()){
+      renderIsSet();
+  }
 }
 
 function handleShowSetclick(){
-
+   
      var tablecards = document.querySelectorAll('#unselected');
     for(let x=0;x<tablecards.length;x++){
         for(let y=0;y<tablecards.length;y++){

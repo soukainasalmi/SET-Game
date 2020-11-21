@@ -17,6 +17,7 @@ export class Player{
         this.turn = true;
     }
     play (index){
+
         const table_cards = document.querySelectorAll('#unselected');
         for(let i = 0 ;i<table_cards.length;i++){
 
@@ -55,6 +56,7 @@ export class Player{
    
     }
     singleplay(){
+
         const table_cards = document.querySelectorAll('#unselected');
         for(let i = 0 ;i<table_cards.length;i++){
 
@@ -62,14 +64,17 @@ export class Player{
         }
         this.turn = true;
         let playerbutton = document.getElementById(0);
-        playerbutton.disabled = true;
-        const selectedcards = document.querySelectorAll('#selected');
-        if(selectedcards.length != 3){
-            this.turn = false;
-            //playerbutton.disabled = false;
-        }else{
-            evaluate(0);
-            playerbutton.disabled = false;
+
+        function waitFor(condition, callback) {
+            if(!condition()) {
+                console.log('waiting');
+                window.setTimeout(waitFor.bind(null, condition, callback), 100);
+            } else {
+                console.log('done');
+                callback();
+            }
         }
+        waitFor(() => document.querySelectorAll('#selected').length === 3, () =>  evaluate(0))
+
     }
 }
