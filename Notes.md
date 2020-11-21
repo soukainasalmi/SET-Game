@@ -1,39 +1,39 @@
 -------------------------------------------------------------------------Grading----------------------------------------------------
----Minimum requirements (6 points)
----The README.md file from the Other requerements section is filled with your data and included with your solution (0 points) DONE
----The game page is displayed (0 points) DONE
----A deck of 27 cards consists of cards using a permutation of the three card properties, the deck is printed onto the console (1 points) DONE
----The first deal of 12 cards is displayed in a 3×4 arrangement (1 point) DONE
----Three cards can be selected (1 point) DONE
----After selecting three cards, the program decides if the SET is correct or not (1 point) DONE
----After a correct SET, the three cards are discarded and three new cards are drawn (1 points) DONE
----The game repeats until the deck runs out (0.5 points) DONE
----If the deck is empty and there is no SET on the table, the game ends. (0.5 points) NOT SURE
---------------------------------------------------Further points----------------------------------------------------------------
----The rules are accessible from the starting page (0.5 points) DONE
----The options are displayed on the starting page (0.5 points) DONE
----The name Of the players can be set, the number of fields matches the number of players, there is a default name for each player (0.5 points) DONE
----The player who is declaring a SET can be selected (1 point) DONE
----If playing a one-player game, the player is always selected (1 point) NOT SURE
----When declaring a SET, a selected card can be unselected (1 point) DONE
----The timer of 10 seconds (during a player declaring a SET) works (1 point) DONE
----Declaring a correct SET gives the player a point (0.5 points) DONE
---Declaring an incorrect SET subtracts a point from the player (0.5 points) DONE
----The selection of players is working properly (e.g. after declaring, the selection gets reset, a player declaring an incorrect SET is disabled unil next turn) (1 point) NOT SURE
----The Is there a SET? button displays according to the settings and works properly (1 point) DONE
----The Show me a SET button displays according to the settings and works properly (0.5 points) DONE
----The Plus three cards button displays according to the settings and works properly (1 points) DONE
----Drawing Plus three cards automatically when there's no SET works (1 point) NOT DONE
----The scores are displayed during and after a game DONE
----No major errors, no way to cause weird bugs (0.5 points) DONE
----Nice, well-designed interaface (1 point) IN PROGRESS
+- [ ] Minimum requirements (6 points)
+- [ ] The README.md file from the Other requerements section is filled with your data and included with your solution (0 points) DONE
+- [ ] The game page is displayed (0 points) DONE
+- [ ] A deck of 27 cards consists of cards using a permutation of the three card properties, the deck is printed onto the console (1 points) DONE
+- [ ] The first deal of 12 cards is displayed in a 3×4 arrangement (1 point) DONE
+- [ ] Three cards can be selected (1 point) DONE
+- [ ] After selecting three cards, the program decides if the SET is correct or not (1 point) DONE
+- [ ] After a correct SET, the three cards are discarded and three new cards are drawn (1 points) DONE
+- [ ] The game repeats until the deck runs out (0.5 points) DONE
+- [ ] If the deck is empty and there is no SET on the table, the game ends. (0.5 points) NOT SURE
+-----------------------------------Further points----------------------------------------------------------------
+- [ ] The rules are accessible from the starting page (0.5 points) DONE
+- [ ] The options are displayed on the starting page (0.5 points) DONE
+- [ ] The name Of the players can be set, the number of fields matches the number of players, there is a default name for each player (0.5 points) DONE
+- [ ] The player who is declaring a SET can be selected (1 point) DONE
+- [ ] If playing a one-player game, the player is always selected (1 point) NOT SURE
+- [ ] When declaring a SET, a selected card can be unselected (1 point) DONE
+- [ ] The timer of 10 seconds (during a player declaring a SET) works (1 point) DONE
+- [ ] Declaring a correct SET gives the player a point (0.5 points) DONE
+- [ ] Declaring an incorrect SET subtracts a point from the player (0.5 points) DONE
+- [ ] The selection of players is working properly (e.g. after declaring, the selection gets reset, a player declaring an incorrect SET is disabled unil next turn) (1 point) NOT SURE
+- [ ] The Is there a SET? button displays according to the settings and works properly (1 point) DONE
+- [ ] The Show me a SET button displays according to the settings and works properly (0.5 points) DONE
+- [ ] The Plus three cards button displays according to the settings and works properly (1 points) DONE
+- [ ] Drawing Plus three cards automatically when there's no SET works (1 point) NOT DONE
+- [ ] The scores are displayed during and after a game DONE
+- [ ] No major errors, no way to cause weird bugs (0.5 points) DONE
+- [ ] Nice, well-designed interaface (1 point) IN PROGRESS
 
 --------------------------------------------------------------------Bonus tasks (5 extra points)----------------------------------------------------------------------
-The difficulty can be selected (3 or 4 properties, 27 or 81 cards) (0.5 points) DONE
-The 4-property mode is playable (1 point) NOT SURE
-The scores are saved locally (0.5 points) NOT DONE
-The settings page displays the one-player three-property toplist (0.5 points) NOT DONE
-The settings page displays the one-player four-property toplist (0.5 points) NOT DONE
-The settings page displays the results of the last 10 multiplayer games (0.5 points) NOT DONE
-Rematch with the current players (1 point) NOT DONE
-Current and total scores displayed during and after the game (0.5 points) DONE
+- [ ]The difficulty can be selected (3 or 4 properties, 27 or 81 cards) (0.5 points) DONE
+- [ ]The 4-property mode is playable (1 point) NOT SURE
+- [ ]The scores are saved locally (0.5 points) NOT DONE
+- [ ]The settings page displays the one-player three-property toplist (0.5 points) NOT DONE
+- [ ]The settings page displays the one-player four-property toplist (0.5 points) NOT DONE
+- [ ]The settings page displays the results of the last 10 multiplayer games (0.5 points) NOT DONE
+- [ ]Rematch with the current players (1 point) NOT DONE
+- [ ]Current and total scores displayed during and after the game (0.5 points) DONE
